@@ -1,0 +1,481 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+:root{
+   --secondary-color: #E54B4B;
+    --color-whi: #EBF1F1;
+    --primary-text: #061738;
+
+
+--secondary-font:'Roboto', sans-serif;
+
+--font-4: 'Gilda Display', serif;
+--font-5: 'Poppins', sans-serif;
+}
+*,*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+body,
+html{
+    font-size: 10px;
+    font-weight: 400;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+    font-family: var(--font-5);
+
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+h1{
+    font-size: 7rem;
+    font-weight: 400;
+    line-height: 1.4;
+
+    color: #fafafa;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-family: var(--font-4);
+}
+h2{
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--primary-text);
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 7rem;
+    font-family: var(--font-4);
+    margin-top: 8rem;
+}
+h3{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: black;
+    font-family: var(--font-5);
+}
+h4{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-text);
+    line-height: 1;
+    margin-bottom: 4rem;
+    font-family: var(--font-4);
+}
+h5{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3;
+    color: gray;
+    font-family: var(--font-3);
+}
+p{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+    color: #111;
+    font-family: var(--font-5);
+}
+img,object{
+    max-width: 100%;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a,
+a:hover,
+a:active,
+a:focus{
+    text-decoration: none;
+    outline: 0;
+}
+a:hover,
+button:hover{
+    transition: all 0.3s ease-in;
+}
+section{
+    padding: 5rem 0rem 10rem 0rem;
+}
+.section-title{
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--primary-font);
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+.section-subtitle{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary-text);
+    font-family: var(--secondary-color);
+    font-family: var(--secondary-font);
+    max-width: 40%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+.main-btn{
+    color: var(--bg-white);
+    z-index: 1;
+    overflow: hidden;
+    text-transform: uppercase;
+    padding: 1rem 3.5rem;
+    letter-spacing: 0.2rem;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: var(--secondary-color);
+    position: relative;
+    bottom: -1.8rem;
+}
+.main-btn:hover{
+    color: var(--secondary-color);
+    background-color: var(--bg-white);
+    cursor: pointer;
+    border: 0.2rem solid var(--secondary-color);
+}
+
+#pack{
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+#pack:hover{
+  color: var(--secondary-color);
+}
+/* ---------------------------header--------------------------------- */
+.header_wrapper{
+  background-color: #fafafa;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+}
+.nav-link{
+  font-size: 1.8rem;
+  color: black;
+}
+.navbar-brand{
+  color: black;
+  font-size: 3rem;
+}
+
+.navbar-brand img{
+  max-width: 200px;
+  max-height: 80px;
+}
+
+.header_wrapper .navbar{
+  padding: .9375rem 0;
+}
+.header_wrapper .nav-item{
+  margin: 1.5rem;
+}
+.header_wrapper .container{
+  background-color: #fafafa;
+}
+.nav-link:hover,
+.nav-link:active{
+  color: var(--secondary-color);
+}
+.navbar-nav a{
+  font-family: var(--secondary-font);
+}
+.navbar-brand {
+
+  font-size: 2.5rem;
+}
+/* ----------------------------------banner---------------------------------------------- */
+
+.banner-container{
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../images/banimgsec.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 60vh;
+
+}
+.hero-text p{
+  text-align: center;
+  color: #fff;
+}
+.selection{
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.booking-area{
+  transform: translatey(-40px);
+  background-color: #fafafa;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+.booking-area .main-btn{
+  margin: 0;
+  padding: 0;
+}
+.form-control{
+  padding: 1rem 0.5rem;
+  font-size: 1.5rem;
+  background-color: #EBF1F1;
+}
+.form-select{
+  padding: 1rem 0.5rem;
+  font-size: 1.5rem;
+  background-color: #EBF1F1;
+}
+.button-2{
+  width: inherit;
+  padding: 1rem 0;
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 1.5rem;
+}
+
+
+.hero-text p {
+  text-align: center;
+  color: #fff;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+
+.form-control::placeholder {
+  color: #495057; /* Adjust the color as needed */
+}
+/* -------------------------------about----------------------------- */
+.sec-about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+/* ---------------------------package---------------------------------- */
+.packages .card{
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+  overflow: hidden;
+  text-align: center;
+}
+.packages .card img{
+  border-radius: 5px;
+}
+.packages .card .card-body{
+  background: transparent;
+  padding: 3rem 0;
+}
+.card-body h3{
+  color: #111;
+}
+.packages .card .card-body p{
+  font-size: 15px;
+}
+.packages .card .card-body h6{
+  font-size: 20px;
+}
+.packages .card .card-body a{
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+.packages .card img:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.packages .card img{
+  transition: 0.5s ease-in-out;
+}
+
+
+.card-body h3{
+  font-size: 1.8rem;
+
+}
+
+.card-body h5{
+  font-size: 1.4rem;
+
+}
+
+.card-body h6{
+  font-size: 1.5rem !important;
+
+}
+/* ---------------------------------------- */
+#offer{
+  background-image: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.75)),url(../images/pexels-francesco-ungaro-2325446.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#offer h2{
+  color: #fafafa;
+}
+#offer h3{
+  color: var(--secondary-color);
+}
+#offer p{
+  color: var(--color-whi);
+}
+#offer .main-btn{
+  margin-bottom: 7rem;
+}
+/* --------------------------feature */
+.feature_section .feature-box{
+  background-color: transparent;
+  color: #111;
+  text-align: start;
+  padding: 8rem 2rem;
+  transition: all 0.3s;
+}
+.feature-icon-boarder{
+  background-color: #ea9999;
+  border-radius: 50%;
+  padding: 1.3rem;
+  display: inline-block;
+}
+.feature-icon{
+  height: 6.5rem;
+  width: 6.5rem;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature-icon img{
+  width: 3.7rem;
+}
+.feature-box h3{
+  color: #1e1e1e;
+  margin-top: 1.5rem;
+}
+
+.feature-box:hover{
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.feature-box:hover .feature-icon-boarder{
+  background-color: white;
+}
+.feature-box :hover .feature-box h3{
+  color: #111;
+}
+.features-text h3{
+  color: var(--secondary-color);
+}
+#ser:hover h3{
+ color: #111;
+}
+
+/* -------------------------------------- */
+#review{
+  background-color: #dee2e6;
+  padding: 2rem 0rem 0.5rem 0rem;
+}
+#review h2{
+margin-bottom: 1rem;
+}
+.testimonials{
+  background-color: #dee2e6;
+  max-width: 1000px;
+  margin: 0 auto 80px auto;
+  background-color: white;
+}
+
+.single-item{
+  background-color: white;
+  color: #111;
+  margin: 50px 15px;
+}
+.profile{
+  margin-bottom: 30px;
+  text-align: center;
+}
+.img-area{
+  margin: 0 15px 15px 15px;
+}
+.img-area img{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.socials i{
+  margin-right: 25px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  color: black;
+  background-color: black;
+  padding: 2rem;
+  border-radius: 50%;
+}
+.bio{
+  text-align: center;
+}
+.bio h5{
+  font-size: 2.3rem;
+  font-weight: 500;
+  font-weight: bold;
+  font-family: var(--secondary-font);
+  color: #111;
+}
+.bio h6{
+  font-size: 1.7rem;
+  font-weight: 300;
+  font-weight: bold;
+  font-family: var(--secondary-font);
+  color: #1e1e1e;
+}
+/* ------------------------------------------------------------------------------------- */
+
+#contact{
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../images/high-angle-shot-brown-rock-formation-lot-parked-cars-blue-sky-evening.jpg);
+
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#contact h4{
+  color: var(--secondary-color);
+}
+#contact p{
+  color: #fafafa;
+}
+#contact i{
+  margin-right: 25px;
+  margin-top: 9px;
+}
+#sec-con{
+
+  display: flex;
+  justify-content: space-between;
+}
+#footer p{
+  font-size: 1rem;
+  text-align: center;
+  padding: 3rem;
+  font-family: var(--secondary-font);
+}
